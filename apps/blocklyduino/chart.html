@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Blink sketch compiler</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+<link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script src="compilerflasher.js" type="text/javascript"></script>
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="smoothie.js"></script>
+</head>
+<body>
+
+		  <select id="cb_cf_baud_rates"></select>
+		  <select id="cb_cf_ports"></select>
+          <button id="cb_cf_serial_monitor_connect">Ouvrir la Console Série</button>
+
+          <!--div id="cb_cf_serial_monitor"></div-->  
+          <div id="serial_valeur"></div> 
+		  <canvas id="mycanvas" width="400" height="100"></canvas>
+		  <script>
+		  	var smoothie = new SmoothieChart();
+			smoothie.streamTo(document.getElementById("mycanvas"));
+			// Data
+			var line = new TimeSeries();
+		  	setInterval(function() { 
+		  		var tab = document.getElementById('serial_valeur').innerHTML.split(/\r?\n/);
+				var val = parseInt(tab[tab.length - 2]);
+				if (val != 'NaN') line.append(new Date().getTime(), val);
+				console.log(tab); //affichage dans la console
+			}, 2000);		
+			smoothie.addTimeSeries(line);
+		  </script>
+
+<div id="serial_monitor_content"></div>
+<script type="text/javascript">
+function getFiles(){
+return {"sketch.ino": $("#code").html()}
+}
+$(document).ready(function(){
+compilerflasher = new compilerflasher(getFiles);
+});
+</script>
+</body>
+</html>
