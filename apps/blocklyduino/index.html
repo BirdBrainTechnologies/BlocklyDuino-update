@@ -12,7 +12,7 @@
       <script src="compilerflasher.js" type="text/javascript"></script>
     <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
   <script>
-  
+
 var TABS_ = ['blocks', 'arduino', 'term','xml'];
 
 var selected = 'blocks';
@@ -89,7 +89,7 @@ function renderContent() {
   } else if (content.id == 'content_arduino') {
     //content.innerHTML = Blockly.Generator.workspaceToCode('Arduino');
     var arduinoTextarea = document.getElementById('textarea_arduino');
-   
+
     arduinoTextarea.value = Blockly.Generator.workspaceToCode('Arduino');
     arduinoTextarea.focus();
   }
@@ -102,11 +102,11 @@ function renderContent() {
            // return {"sketch.ino": Blockly.Generator.workspaceToCode('Arduino') }
            //$('textarea#textarea_arduino').val() //&lt; et &lt;
            var code = $('textarea#textarea_arduino').val();
-            
+
             code=code.replace(/</g, '&lt;').replace(/>/g, '&gt;');
             //code=code.replace(">","&gt;");
             //code = "<![CDATA[" + code + "]]>";
-           //document.write (code); 
+           //document.write (code);
            return {"sketch.ino": code }
         }
 
@@ -114,21 +114,21 @@ function renderContent() {
             compilerflasher = new compilerflasher(getFiles);
             compilerflasher.on("pre_verify", function(){
                 $("#event_msg").append('pre_verify event fired!<br/><br/>')
-                $("#debug_arduino").html('Vérification .... ');
+                $("#debug_arduino").html('Verifying .... ');
             });
             compilerflasher.on("verification_succeed", function(binary_size){
                 $("#event_msg").append('verification_succeed event fired! Sketch size: '+binary_size+"<br/><br/>")
-                $("#debug_arduino").html('Vérification terminé : '+binary_size);
+                $("#debug_arduino").html('Code Compiled Successfully! : '+binary_size);
             });
             compilerflasher.on("verification_failed", function(error_output){
-                $("#event_msg").append("verification_failed event fired! \nCompilation error: <pre>"+error_output+"</pre><br/><br/>")  
+                $("#event_msg").append("verification_failed event fired! \nCompilation error: <pre>"+error_output+"</pre><br/><br/>")
                 $("#debug_arduino").html(error_output);
             });
         });
 
 
 
- 
+
 /**
  * Initialize Blockly.  Called on page load.
  * @param {!Blockly} blockly Instance of Blockly from iframe.
@@ -139,7 +139,7 @@ function init(blockly) {
   //};
 
   window.Blockly = blockly;
-  
+
   // var blockly_frame = document.getElementById("content_blocks");
   // Blockly.inject(blockly_frame, {path: '../../'});
 
@@ -169,7 +169,7 @@ function init(blockly) {
       margin: 0;
       padding:0;
       overflow: hidden;
-      
+
     }
     .blocklySvg {
       height: 100%;
@@ -217,12 +217,12 @@ function init(blockly) {
       margin: 0;
       padding: 0;
       border: none;
-      
+
     }
     td {
       padding: 0;
     }
-  
+
     #content_xml,
     #content_arduino {
       width: 100%;
@@ -279,7 +279,7 @@ function init(blockly) {
       white-space: pre-wrap;
     }
     #cb_cf_boards, #cb_cf_ports,#cb_cf_baud_rates {
-      
+
     border: 1px solid #CCC;
     border-top-width: 1px;
     border-right-width-value: 1px;
@@ -318,8 +318,8 @@ function init(blockly) {
     }
 
     #content_term {
-      
-           
+
+
             width: 100%;
             height:100%;
     }
@@ -327,20 +327,20 @@ function init(blockly) {
             width: 100%;
             height:100%;
 }
-             
+
     }
     #textarea_term {
       width: 100%;
       height: 100%;
       border: none;
-      
+
     }
     iframe {
       width: 100%;
       height: 100%;
       border: 1px solid #ccc;
       border-top-style: none;
-      
+
     }
     button {
       padding: 1px 1em;
@@ -368,14 +368,14 @@ function init(blockly) {
   <table height="100%" width="100%">
     <tr>
       <td>
-        
+
       </td>
     </tr>
     <tr>
       <td>
         <table>
           <tr id="tabRow" height="1em">
-            <td id="tab_blocks" class="tabon" onclick="tabClick(this.id)">Blocs</td>
+            <td id="tab_blocks" class="tabon" onclick="tabClick(this.id)">Blocks</td>
             <td class="tabmin">&nbsp;</td>
             <!--td id="tab_javascript" class="taboff" onclick="tabClick(this.id)">JavaScript</td>
             <td class="tabmin">&nbsp;</td-->
@@ -383,22 +383,22 @@ function init(blockly) {
             <td class="tabmin">&nbsp;</td>
             <td id="tab_python" class="taboff" onclick="tabClick(this.id)">Python</td>
             <td class="tabmin">&nbsp;</td-->
-            <td id="tab_arduino" class="taboff" onclick="tabClick(this.id)">Code_Arduino</td>
-            <td class="tabmin">&nbsp;</td>            
-            <td id="tab_term" class="taboff" onclick="tabClick(this.id)">Console_Série</td>
+            <td id="tab_arduino" class="taboff" onclick="tabClick(this.id)">Arduino Code</td>
+            <td class="tabmin">&nbsp;</td>
+            <td id="tab_term" class="taboff" onclick="tabClick(this.id)">Serial Console</td>
             <td id="tab_xml" class="taboff" onclick="tabClick(this.id)">XML</td>
             <td class="tabmax">
-              
-              <button onclick="discard()">Annuler</button>
-              <button onclick="save()">Sauver XML</button>
-              <button id="fakeload">Charger XML</button>
+
+              <button onclick="discard()">Cancel</button>
+              <button onclick="save()">Save Program</button>
+              <button id="fakeload">Load Program</button>
               <input type="file" id="load" style="display: none;"/>
               <!--button class="launch" onclick="runJS()">Run Program</button-->
             </td>
           </tr>
         </table>
       </td>
- 
+
     </tr>
     <tr>
       <td height="99%">
@@ -406,12 +406,12 @@ function init(blockly) {
 		<!--div id="content_blocks" style="height:auto !important;height:400px; min-height:400px;"></div-->
         <!--pre id="content_javascript"></pre>
         <pre id="content_dart"></pre-->
-        <div id="content_arduino">          
+        <div id="content_arduino">
           <select id="cb_cf_boards"></select>
           <select id="cb_cf_ports"></select>
           <select id="cb_cf_programmers"> </select>
-              <button id="cb_cf_verify_btn" class="btn btn-success">Vérifiez votre code</button>
-              <button id="cb_cf_flash_btn" class="btn btn-success">Flashez Arduino ! </button>           
+              <button id="cb_cf_verify_btn" class="btn btn-success">Verify Code</button>
+              <button id="cb_cf_flash_btn" class="btn btn-success">Upload to Arduino! </button>
               <textarea id="textarea_arduino"></textarea>
               <p id="cb_cf_operation_output"></p>
               <div id="debug_arduino"></div>
@@ -422,8 +422,8 @@ function init(blockly) {
         </div>
         <div id="content_term">
           <select id="cb_cf_baud_rates"></select>
-          <button id="cb_cf_serial_monitor_connect">Ouvrir la Console Série</button>
-          <!--div id="cb_cf_serial_monitor"></div-->  
+          <button id="cb_cf_serial_monitor_connect">Open Serial Console</button>
+          <!--div id="cb_cf_serial_monitor"></div-->
           <div id="serial_hud"></div>
         </div>
       </td>

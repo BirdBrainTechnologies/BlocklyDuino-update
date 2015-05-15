@@ -13,22 +13,22 @@
 
 		  <select id="cb_cf_baud_rates"></select>
 		  <select id="cb_cf_ports"></select>
-          <button id="cb_cf_serial_monitor_connect">Ouvrir la Console Série</button>
+          <button id="cb_cf_serial_monitor_connect">Open Serial Console</button>
 
-          <!--div id="cb_cf_serial_monitor"></div-->  
-          <div id="serial_valeur"></div> 
+          <!--div id="cb_cf_serial_monitor"></div-->
+          <div id="serial_valeur"></div>
 		  <canvas id="mycanvas" width="400" height="100"></canvas>
 		  <script>
 		  	var smoothie = new SmoothieChart();
 			smoothie.streamTo(document.getElementById("mycanvas"));
 			// Data
 			var line = new TimeSeries();
-		  	setInterval(function() { 
+		  	setInterval(function() {
 		  		var tab = document.getElementById('serial_valeur').innerHTML.split(/\r?\n/);
 				var val = parseInt(tab[tab.length - 2]);
 				if (val != 'NaN') line.append(new Date().getTime(), val);
 				console.log(tab); //affichage dans la console
-			}, 2000);		
+			}, 2000);
 			smoothie.addTimeSeries(line);
 		  </script>
 

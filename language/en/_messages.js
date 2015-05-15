@@ -29,42 +29,42 @@
  */
 
 // Context menus.
-Blockly.MSG_DUPLICATE_BLOCK = 'Dupliquer';
-Blockly.MSG_REMOVE_COMMENT = 'Enlever le commentaire';
-Blockly.MSG_ADD_COMMENT = 'Ajouter un commentaire';
-Blockly.MSG_EXTERNAL_INPUTS = 'Entrée externe';
-Blockly.MSG_INLINE_INPUTS = 'Entrée interne';
-Blockly.MSG_DELETE_BLOCK = 'Effacer le bloc';
-Blockly.MSG_DELETE_X_BLOCKS = 'Effacer les %1 blocs';
-Blockly.MSG_COLLAPSE_BLOCK = 'Contracter les blocs';
-Blockly.MSG_EXPAND_BLOCK = 'Ettendre les blocs';
-Blockly.MSG_DISABLE_BLOCK = 'Désactiver le bloc';
-Blockly.MSG_ENABLE_BLOCK = 'Activer le bloc';
-Blockly.MSG_HELP = 'Aide';
+Blockly.MSG_DUPLICATE_BLOCK = 'Duplicate';
+Blockly.MSG_REMOVE_COMMENT = 'Remove Comment';
+Blockly.MSG_ADD_COMMENT = 'Add Comment';
+Blockly.MSG_EXTERNAL_INPUTS = 'External Inputs';
+Blockly.MSG_INLINE_INPUTS = 'Inline Inputs';
+Blockly.MSG_DELETE_BLOCK = 'Delete Block';
+Blockly.MSG_DELETE_X_BLOCKS = 'Delete %1 Blocks';
+Blockly.MSG_COLLAPSE_BLOCK = 'Collapse Block';
+Blockly.MSG_EXPAND_BLOCK = 'Expand Block';
+Blockly.MSG_DISABLE_BLOCK = 'Disable Block';
+Blockly.MSG_ENABLE_BLOCK = 'Enable Block';
+Blockly.MSG_HELP = 'Help';
 
 // Variable renaming.
-Blockly.MSG_CHANGE_VALUE_TITLE = 'Changer la valeur:';
-Blockly.MSG_NEW_VARIABLE = 'Nouvelle variable...';
-Blockly.MSG_NEW_VARIABLE_TITLE = 'Nouveau nom de la variable:';
-Blockly.MSG_RENAME_VARIABLE = 'Renommer la variable...';
-Blockly.MSG_RENAME_VARIABLE_TITLE = 'Renommer les "%1" variables:';
+Blockly.MSG_CHANGE_VALUE_TITLE = 'Change value:';
+Blockly.MSG_NEW_VARIABLE = 'New variable...';
+Blockly.MSG_NEW_VARIABLE_TITLE = 'New variable name:';
+Blockly.MSG_RENAME_VARIABLE = 'Rename variable...';
+Blockly.MSG_RENAME_VARIABLE_TITLE = 'Rename all "%1" variables to:';
 
 // Toolbox.
 Blockly.MSG_VARIABLE_CATEGORY = 'Variables';
 Blockly.MSG_PROCEDURE_CATEGORY = 'Procedures';
 
 // Colour Blocks.
-Blockly.LANG_CATEGORY_COLOUR = 'Couleur';
-Blockly.LANG_COLOUR_PICKER_HELPURL = 'http://fr.wikipedia.org/wiki/Couleur';
-Blockly.LANG_COLOUR_PICKER_TOOLTIP = 'Choisir une couleur dans la palette.';
+Blockly.LANG_CATEGORY_COLOUR = 'Colour';
+Blockly.LANG_COLOUR_PICKER_HELPURL = 'http://en.wikipedia.org/wiki/Color';
+Blockly.LANG_COLOUR_PICKER_TOOLTIP = 'Choose a colour form the palette.';
 
-Blockly.LANG_COLOUR_RGB_HELPURL = 'http://fr.wikipedia.org/wiki/Rouge_vert_bleu';
-Blockly.LANG_COLOUR_RGB_TITLE = 'couleur avec';
-Blockly.LANG_COLOUR_RGB_RED = 'rouge';
-Blockly.LANG_COLOUR_RGB_GREEN = 'vert';
-Blockly.LANG_COLOUR_RGB_BLUE = 'bleu';
-Blockly.LANG_COLOUR_RGB_TOOLTIP = 'Créer une couleur avec des doses de rouge, vert,\n' +
-    'et bleu.  toutes les valeurs doivent étre comprises entre 0.0 et 1.0';
+Blockly.LANG_COLOUR_RGB_HELPURL = 'http://en.wikipedia.org/wiki/RGB_color_model';
+Blockly.LANG_COLOUR_RGB_TITLE = 'colour with';
+Blockly.LANG_COLOUR_RGB_RED = 'red';
+Blockly.LANG_COLOUR_RGB_GREEN = 'green';
+Blockly.LANG_COLOUR_RGB_BLUE = 'blue';
+Blockly.LANG_COLOUR_RGB_TOOLTIP = 'Create a colour with the specified amount of red, green,\n' +
+    'and blue.  All values must be between 0.0 and 1.0.';
 
 Blockly.LANG_COLOUR_BLEND_TITLE = 'blend';
 Blockly.LANG_COLOUR_BLEND_COLOUR1 = 'colour 1';
@@ -73,62 +73,62 @@ Blockly.LANG_COLOUR_BLEND_RATIO = 'ratio';
 Blockly.LANG_COLOUR_BLEND_TOOLTIP = 'Blends two colours together with a given ratio (0.0 - 1.0).';
 
 // Control Blocks.
-Blockly.LANG_CATEGORY_CONTROLS = 'Controles';
-Blockly.LANG_CONTROLS_IF_HELPURL = 'http://fr.wikipedia.org/wiki/Structure_de_contr%C3%B4le';
-Blockly.LANG_CONTROLS_IF_TOOLTIP_1 = 'SI la valeur est VRAI, ALORS execute les instructions.';
-Blockly.LANG_CONTROLS_IF_TOOLTIP_2 = 'SI la valeur est VRAI, ALORS execute la premiere instruction du bloc.\n' +
-    'SINON execute la seconde instruction dans le second bloc.';
-Blockly.LANG_CONTROLS_IF_TOOLTIP_3 = 'Si la valeur est VRAI, ALORS execute la premiere instruction du bloc.\n' +
-    'SINON execute la seconde instruction dans le second bloc.';
-Blockly.LANG_CONTROLS_IF_TOOLTIP_4 = 'SI la valeur est VRAI, ALORS execute la premiere instruction du bloc.\n' +
-    'SINON execute la seconde instruction dans le second bloc.' +
-    'SI aucune des valeurs sont VRAI, ALORS execute la dernière instruction du dernier bloc';
-Blockly.LANG_CONTROLS_IF_MSG_IF = 'si';
-Blockly.LANG_CONTROLS_IF_MSG_ELSEIF = 'sinon si';
-Blockly.LANG_CONTROLS_IF_MSG_ELSE = 'sinon';
-Blockly.LANG_CONTROLS_IF_MSG_THEN = 'alors';
+Blockly.LANG_CATEGORY_CONTROLS = 'Control';
+Blockly.LANG_CONTROLS_IF_HELPURL = 'http://code.google.com/p/blockly/wiki/If_Then';
+Blockly.LANG_CONTROLS_IF_TOOLTIP_1 = 'If a value is true, then do some statements.';
+Blockly.LANG_CONTROLS_IF_TOOLTIP_2 = 'If a value is true, then do the first block of statements.\n' +
+    'Otherwise, do the second block of statements.';
+Blockly.LANG_CONTROLS_IF_TOOLTIP_3 = 'If the first value is true, then do the first block of statements.\n' +
+    'Otherwise, if the second value is true, do the second block of statements.';
+Blockly.LANG_CONTROLS_IF_TOOLTIP_4 = 'If the first value is true, then do the first block of statements.\n' +
+    'Otherwise, if the second value is true, do the second block of statements.\n' +
+    'If none of the values are true, do the last block of statements.';
+Blockly.LANG_CONTROLS_IF_MSG_IF = 'if';
+Blockly.LANG_CONTROLS_IF_MSG_ELSEIF = 'else if';
+Blockly.LANG_CONTROLS_IF_MSG_ELSE = 'else';
+Blockly.LANG_CONTROLS_IF_MSG_THEN = 'do';
 
-Blockly.LANG_CONTROLS_IF_IF_TITLE_IF = 'si';
+Blockly.LANG_CONTROLS_IF_IF_TITLE_IF = 'if';
 Blockly.LANG_CONTROLS_IF_IF_TOOLTIP = 'Add, remove, or reorder sections\n' +
     'to reconfigure this if block.';
 
-Blockly.LANG_CONTROLS_IF_ELSEIF_TITLE_ELSEIF = 'sinon si';
-Blockly.LANG_CONTROLS_IF_ELSEIF_TOOLTIP = 'Ajouter une condition dans le bloc IF.';
+Blockly.LANG_CONTROLS_IF_ELSEIF_TITLE_ELSEIF = 'else if';
+Blockly.LANG_CONTROLS_IF_ELSEIF_TOOLTIP = 'Add a condition to the if block.';
 
-Blockly.LANG_CONTROLS_IF_ELSE_TITLE_ELSE = 'sinon';
-Blockly.LANG_CONTROLS_IF_ELSE_TOOLTIP = 'Ajouter une condition finale dans le bloc IF.';
+Blockly.LANG_CONTROLS_IF_ELSE_TITLE_ELSE = 'else';
+Blockly.LANG_CONTROLS_IF_ELSE_TOOLTIP = 'Add a final, catch-all condition to the if block.';
 
-Blockly.LANG_CONTROLS_REPEAT_HELPURL = 'http://fr.wikipedia.org/wiki/Boucle_for';
-Blockly.LANG_CONTROLS_REPEAT_TITLE_REPEAT = 'Répete';
-Blockly.LANG_CONTROLS_REPEAT_TITLE_TIMES = 'fois';
-Blockly.LANG_CONTROLS_REPEAT_INPUT_DO = 'alors';
-Blockly.LANG_CONTROLS_REPEAT_TOOLTIP = 'Exécute les instructions un certain nombre de fois.';
+Blockly.LANG_CONTROLS_REPEAT_HELPURL = 'http://en.wikipedia.org/wiki/For_loop';
+Blockly.LANG_CONTROLS_REPEAT_TITLE_REPEAT = 'repeat';
+Blockly.LANG_CONTROLS_REPEAT_TITLE_TIMES = 'times';
+Blockly.LANG_CONTROLS_REPEAT_INPUT_DO = 'do';
+Blockly.LANG_CONTROLS_REPEAT_TOOLTIP = 'Do some statements several times.';
 
 Blockly.LANG_CONTROLS_WHILEUNTIL_HELPURL = 'http://code.google.com/p/blockly/wiki/Repeat';
-Blockly.LANG_CONTROLS_WHILEUNTIL_TITLE_REPEAT = 'répete';
-Blockly.LANG_CONTROLS_WHILEUNTIL_INPUT_DO = 'Exécute';
-Blockly.LANG_CONTROLS_WHILEUNTIL_OPERATOR_WHILE = 'Tant que vrai';
-Blockly.LANG_CONTROLS_WHILEUNTIL_OPERATOR_UNTIL = 'Tant que faux';
-Blockly.LANG_CONTROLS_WHILEUNTIL_TOOLTIP_WHILE = 'TANT qu une valeur est VRAI, alors execute les instuctions du bloc.';
-Blockly.LANG_CONTROLS_WHILEUNTIL_TOOLTIP_UNTIL = 'SINON, la valeur est FAUX execute les instructions du bloc.';
+Blockly.LANG_CONTROLS_WHILEUNTIL_TITLE_REPEAT = 'repeat';
+Blockly.LANG_CONTROLS_WHILEUNTIL_INPUT_DO = 'do';
+Blockly.LANG_CONTROLS_WHILEUNTIL_OPERATOR_WHILE = 'while';
+Blockly.LANG_CONTROLS_WHILEUNTIL_OPERATOR_UNTIL = 'until';
+Blockly.LANG_CONTROLS_WHILEUNTIL_TOOLTIP_WHILE = 'While a value is true, then do some statements.';
+Blockly.LANG_CONTROLS_WHILEUNTIL_TOOLTIP_UNTIL = 'While a value is false, then do some statements.';
 
 Blockly.LANG_CONTROLS_FOR_HELPURL = 'http://en.wikipedia.org/wiki/For_loop';
-Blockly.LANG_CONTROLS_FOR_INPUT_WITH = 'Comptes avec la variable';
+Blockly.LANG_CONTROLS_FOR_INPUT_WITH = 'count with';
 Blockly.LANG_CONTROLS_FOR_INPUT_VAR = 'x';
-Blockly.LANG_CONTROLS_FOR_INPUT_FROM = 'de';
-Blockly.LANG_CONTROLS_FOR_INPUT_TO = 'à';
-Blockly.LANG_CONTROLS_FOR_INPUT_DO = 'Exécute';
-Blockly.LANG_CONTROLS_FOR_TOOLTIP = 'Execute un nombre de fois les instructions, d un nombre de départ à un nombre de fin.\n' +
-    'A chaque fois incrémente à\n' +
-    'la variable "%1", et éxecute les instructions.';
+Blockly.LANG_CONTROLS_FOR_INPUT_FROM = 'from';
+Blockly.LANG_CONTROLS_FOR_INPUT_TO = 'to';
+Blockly.LANG_CONTROLS_FOR_INPUT_DO = 'do';
+Blockly.LANG_CONTROLS_FOR_TOOLTIP = 'Count from a start number to an end number.\n' +
+    'For each count, set the current count number to\n' +
+    'variable "%1", and then do some statements.';
 
 Blockly.LANG_CONTROLS_FOREACH_HELPURL = 'http://en.wikipedia.org/wiki/For_loop';
-Blockly.LANG_CONTROLS_FOREACH_INPUT_ITEM = 'Pour chaque item';
+Blockly.LANG_CONTROLS_FOREACH_INPUT_ITEM = 'for each item';
 Blockly.LANG_CONTROLS_FOREACH_INPUT_VAR = 'x';
-Blockly.LANG_CONTROLS_FOREACH_INPUT_INLIST = 'dans la liste';
-Blockly.LANG_CONTROLS_FOREACH_INPUT_DO = 'Exécute';
-Blockly.LANG_CONTROLS_FOREACH_TOOLTIP = 'Pour chaque item de la liste, positionne l item à\n' +
-    ' la variable "%1", et éxécute les instructions.';
+Blockly.LANG_CONTROLS_FOREACH_INPUT_INLIST = 'in list';
+Blockly.LANG_CONTROLS_FOREACH_INPUT_DO = 'do';
+Blockly.LANG_CONTROLS_FOREACH_TOOLTIP = 'For each item in a list, set the item to\n' +
+    'variable "%1", and then do some statements.';
 
 Blockly.LANG_CONTROLS_FLOW_STATEMENTS_HELPURL = 'http://en.wikipedia.org/wiki/Control_flow';
 Blockly.LANG_CONTROLS_FLOW_STATEMENTS_INPUT_OFLOOP = 'of loop';
@@ -142,7 +142,7 @@ Blockly.LANG_CONTROLS_FLOW_STATEMENTS_WARNING = 'Warning:\n' +
     'be used within a loop.';
 
 // Logic Blocks.
-Blockly.LANG_CATEGORY_LOGIC = 'Logique';
+Blockly.LANG_CATEGORY_LOGIC = 'Logic';
 Blockly.LANG_LOGIC_COMPARE_HELPURL = 'http://en.wikipedia.org/wiki/Inequality_(mathematics)';
 Blockly.LANG_LOGIC_COMPARE_TOOLTIP_EQ = 'Return true if both inputs equal each other.';
 Blockly.LANG_LOGIC_COMPARE_TOOLTIP_NEQ = 'Return true if both inputs are not equal to each other.';
@@ -156,46 +156,46 @@ Blockly.LANG_LOGIC_COMPARE_TOOLTIP_GTE = 'Return true if the first input is grea
     'than or equal to the second input.';
 
 Blockly.LANG_LOGIC_OPERATION_HELPURL = 'http://code.google.com/p/blockly/wiki/And_Or';
-Blockly.LANG_LOGIC_OPERATION_AND = 'et';
-Blockly.LANG_LOGIC_OPERATION_OR = 'ou';
-Blockly.LANG_LOGIC_OPERATION_TOOLTIP_AND = 'Retourne VRAI si les 2 entrées sont VRAI.';
-Blockly.LANG_LOGIC_OPERATION_TOOLTIP_OR = 'Retourne VRAI si une des 2 entrées sont VRAI.';
+Blockly.LANG_LOGIC_OPERATION_AND = 'and';
+Blockly.LANG_LOGIC_OPERATION_OR = 'or';
+Blockly.LANG_LOGIC_OPERATION_TOOLTIP_AND = 'Return true if both inputs are true.';
+Blockly.LANG_LOGIC_OPERATION_TOOLTIP_OR = 'Return true if either inputs are true.';
 
 Blockly.LANG_LOGIC_NEGATE_HELPURL = 'http://code.google.com/p/blockly/wiki/Not';
-Blockly.LANG_LOGIC_NEGATE_INPUT_NOT = 'non';
+Blockly.LANG_LOGIC_NEGATE_INPUT_NOT = 'not';
 Blockly.LANG_LOGIC_NEGATE_TOOLTIP = 'Returns true if the input is false.\n' +
     'Returns false if the input is true.';
 
 Blockly.LANG_LOGIC_BOOLEAN_HELPURL = 'http://code.google.com/p/blockly/wiki/True_False';
-Blockly.LANG_LOGIC_BOOLEAN_TRUE = 'Vrai';
-Blockly.LANG_LOGIC_BOOLEAN_FALSE = 'Faux';
-Blockly.LANG_LOGIC_BOOLEAN_TOOLTIP = 'Renvoie vrai ou faux.';
+Blockly.LANG_LOGIC_BOOLEAN_TRUE = 'true';
+Blockly.LANG_LOGIC_BOOLEAN_FALSE = 'false';
+Blockly.LANG_LOGIC_BOOLEAN_TOOLTIP = 'Returns either true or false.';
 
 Blockly.LANG_LOGIC_NULL_HELPURL = 'http://en.wikipedia.org/wiki/Nullable_type';
-Blockly.LANG_LOGIC_NULL = 'rien';
-Blockly.LANG_LOGIC_NULL_TOOLTIP = 'Renvoie rien.';
+Blockly.LANG_LOGIC_NULL = 'null';
+Blockly.LANG_LOGIC_NULL_TOOLTIP = 'Returns null.';
 
 // Math Blocks.
 Blockly.LANG_CATEGORY_MATH = 'Math';
 Blockly.LANG_MATH_NUMBER_HELPURL = 'http://en.wikipedia.org/wiki/Number';
-Blockly.LANG_MATH_NUMBER_TOOLTIP = 'Un nombre.';
+Blockly.LANG_MATH_NUMBER_TOOLTIP = 'A number.';
 
 Blockly.LANG_MATH_ARITHMETIC_HELPURL = 'http://en.wikipedia.org/wiki/Arithmetic';
-Blockly.LANG_MATH_ARITHMETIC_TOOLTIP_ADD = 'Renvoie la somme de 2 nombres.';
-Blockly.LANG_MATH_ARITHMETIC_TOOLTIP_MINUS = 'Renvoie la soustraction de 2 nombres.';
-Blockly.LANG_MATH_ARITHMETIC_TOOLTIP_MULTIPLY = 'Renvoie la multiplication de 2 nombres.';
-Blockly.LANG_MATH_ARITHMETIC_TOOLTIP_DIVIDE = 'Renvoie le quotien de 2 nombres.';
-Blockly.LANG_MATH_ARITHMETIC_TOOLTIP_POWER = 'Renvoi la puissance \n' +
-    '.';
+Blockly.LANG_MATH_ARITHMETIC_TOOLTIP_ADD = 'Return the sum of the two numbers.';
+Blockly.LANG_MATH_ARITHMETIC_TOOLTIP_MINUS = 'Return the difference of the two numbers.';
+Blockly.LANG_MATH_ARITHMETIC_TOOLTIP_MULTIPLY = 'Return the product of the two numbers.';
+Blockly.LANG_MATH_ARITHMETIC_TOOLTIP_DIVIDE = 'Return the quotient of the two numbers.';
+Blockly.LANG_MATH_ARITHMETIC_TOOLTIP_POWER = 'Return the first number raised to\n' +
+    'the power of the second number.';
 
 Blockly.LANG_MATH_CHANGE_HELPURL = 'http://en.wikipedia.org/wiki/Negation';
 Blockly.LANG_MATH_CHANGE_TITLE_CHANGE = 'change';
 Blockly.LANG_MATH_CHANGE_TITLE_ITEM = 'item';
-Blockly.LANG_MATH_CHANGE_INPUT_BY = 'par';
-Blockly.LANG_MATH_CHANGE_TOOLTIP = 'Ajoute un nombre à la variable "%1".';
+Blockly.LANG_MATH_CHANGE_INPUT_BY = 'by';
+Blockly.LANG_MATH_CHANGE_TOOLTIP = 'Add a number to variable "%1".';
 
 Blockly.LANG_MATH_SINGLE_HELPURL = 'http://en.wikipedia.org/wiki/Square_root';
-Blockly.LANG_MATH_SINGLE_OP_ROOT = 'racine carée';
+Blockly.LANG_MATH_SINGLE_OP_ROOT = 'square root';
 Blockly.LANG_MATH_SINGLE_OP_ABSOLUTE = 'absolute';
 Blockly.LANG_MATH_SINGLE_TOOLTIP_ROOT = 'Return the square root of a number.';
 Blockly.LANG_MATH_SINGLE_TOOLTIP_ABS = 'Return the absolute value of a number.';
@@ -260,9 +260,9 @@ Blockly.LANG_MATH_RANDOM_FLOAT_TOOLTIP = 'Return a random fraction between\n' +
     '0.0 (inclusive) and 1.0 (exclusive).';
 
 // Text Blocks.
-Blockly.LANG_CATEGORY_TEXT = 'Texte';
+Blockly.LANG_CATEGORY_TEXT = 'Text';
 Blockly.LANG_TEXT_TEXT_HELPURL = 'http://en.wikipedia.org/wiki/String_(computer_science)';
-Blockly.LANG_TEXT_TEXT_TOOLTIP = 'une ligne, un mot,une lettre';
+Blockly.LANG_TEXT_TEXT_TOOLTIP = 'A letter, word, or line of text.';
 
 Blockly.LANG_TEXT_JOIN_HELPURL = '';
 Blockly.LANG_TEXT_JOIN_TITLE_CREATEWITH = 'create text with';
@@ -330,8 +330,8 @@ Blockly.LANG_TEXT_TRIM_OPERATOR_LEFT = 'left';
 Blockly.LANG_TEXT_TRIM_OPERATOR_RIGHT = 'right';
 
 Blockly.LANG_TEXT_PRINT_HELPURL = 'http://www.liv.ac.uk/HPC/HTMLF90Course/HTMLF90CourseNotesnode91.html';
-Blockly.LANG_TEXT_PRINT_TITLE_PRINT = 'ecrire';
-Blockly.LANG_TEXT_PRINT_TOOLTIP = 'Ecris un texte, un nombre, une valeur.';
+Blockly.LANG_TEXT_PRINT_TITLE_PRINT = 'print';
+Blockly.LANG_TEXT_PRINT_TOOLTIP = 'Print the specified text, number or other value.';
 
 Blockly.LANG_TEXT_PROMPT_HELPURL = 'http://www.liv.ac.uk/HPC/HTMLF90Course/HTMLF90CourseNotesnode92.html';
 Blockly.LANG_TEXT_PROMPT_TITLE_PROMPT_FOR = 'prompt for';
@@ -405,21 +405,21 @@ Blockly.LANG_VARIABLES_SET_TOOLTIP = 'Sets this variable to be equal to the inpu
 // Procedures Blocks.
 Blockly.LANG_PROCEDURES_DEFNORETURN_HELPURL = 'http://en.wikipedia.org/wiki/Procedure_%28computer_science%29';
 Blockly.LANG_PROCEDURES_DEFNORETURN_PROCEDURE = 'procedure';
-Blockly.LANG_PROCEDURES_DEFNORETURN_DO = 'Execute';
-Blockly.LANG_PROCEDURES_DEFNORETURN_TOOLTIP = 'Une procedure sans valeur retournée.';
+Blockly.LANG_PROCEDURES_DEFNORETURN_DO = 'do';
+Blockly.LANG_PROCEDURES_DEFNORETURN_TOOLTIP = 'A procedure with no return value.';
 
 Blockly.LANG_PROCEDURES_DEFRETURN_HELPURL = 'http://en.wikipedia.org/wiki/Procedure_%28computer_science%29';
 Blockly.LANG_PROCEDURES_DEFRETURN_PROCEDURE = Blockly.LANG_PROCEDURES_DEFNORETURN_PROCEDURE;
 Blockly.LANG_PROCEDURES_DEFRETURN_DO = Blockly.LANG_PROCEDURES_DEFNORETURN_DO;
-Blockly.LANG_PROCEDURES_DEFRETURN_RETURN = 'Renvoyer';
-Blockly.LANG_PROCEDURES_DEFRETURN_TOOLTIP = 'Une procedure sans valeur renvoyée.';
+Blockly.LANG_PROCEDURES_DEFRETURN_RETURN = 'return';
+Blockly.LANG_PROCEDURES_DEFRETURN_TOOLTIP = 'A procedure with a return value.';
 
 Blockly.LANG_PROCEDURES_DEF_DUPLICATE_WARNING = 'Warning:\n' +
     'This procedure has\n' +
     'duplicate parameters.';
 
 Blockly.LANG_PROCEDURES_CALLNORETURN_HELPURL = 'http://en.wikipedia.org/wiki/Procedure_%28computer_science%29';
-Blockly.LANG_PROCEDURES_CALLNORETURN_CALL = 'Execute';
+Blockly.LANG_PROCEDURES_CALLNORETURN_CALL = 'do';
 Blockly.LANG_PROCEDURES_CALLNORETURN_PROCEDURE = 'procedure';
 Blockly.LANG_PROCEDURES_CALLNORETURN_TOOLTIP = 'Call a procedure with no return value.';
 
@@ -428,7 +428,7 @@ Blockly.LANG_PROCEDURES_CALLRETURN_CALL = Blockly.LANG_PROCEDURES_CALLNORETURN_C
 Blockly.LANG_PROCEDURES_CALLRETURN_PROCEDURE = Blockly.LANG_PROCEDURES_CALLNORETURN_PROCEDURE;
 Blockly.LANG_PROCEDURES_CALLRETURN_TOOLTIP = 'Call a procedure with a return value.';
 
-Blockly.LANG_PROCEDURES_MUTATORCONTAINER_TITLE = 'parametres';
+Blockly.LANG_PROCEDURES_MUTATORCONTAINER_TITLE = 'parameters';
 Blockly.LANG_PROCEDURES_MUTATORARG_TITLE = 'variable:';
 
 Blockly.LANG_PROCEDURES_HIGHLIGHT_DEF = 'Highlight Procedure';

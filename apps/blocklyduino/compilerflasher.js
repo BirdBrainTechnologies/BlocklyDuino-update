@@ -10,7 +10,7 @@ compilerflasher = function(lf){
     this.minVersion = "1.6.0.8";
 
     var that = this;
- 
+
     this.eventManager = new function(){
         this._listeners = {};
 
@@ -270,9 +270,30 @@ compilerflasher = function(lf){
 
         this.searchPlugin = function()
         {
-            for (i = 0; i < navigator.plugins.length; i++)
-                if (navigator.plugins[i].name == "Codebender.cc" || navigator.plugins[i].name == "Codebendercc")
-                    this.plugin_found = true;
+			navigator.sayswho= (function(){
+			    var ua= navigator.userAgent, tem,
+			    M= ua.match(/(opera|chrome|safari|firefox|msie|trident(?=\/))\/?\s*(\d+)/i) || [];
+			    if(/trident/i.test(M[1])){
+			        tem=  /\brv[ :]+(\d+)/g.exec(ua) || [];
+			        return 'IE '+(tem[1] || '');
+			    }
+			    if(M[1]=== 'Chrome'){
+			        tem= ua.match(/\b(OPR|Edge)\/(\d+)/);
+			        if(tem!= null) return tem.slice(1).join(' ').replace('OPR', 'Opera');
+			    }
+			    M= M[2]? [M[1], M[2]]: [navigator.appName, navigator.appVersion, '-?'];
+			    if((tem= ua.match(/version\/(\d+)/i))!= null) M.splice(1, 1, tem[1]);
+			    return M.join(' ');
+			})();
+			// Quick hack that assumes user with Chrome has Codebender plugin installed
+			if(navigator.sayswho.indexOf("Chrome") > -1) {
+	           	this.plugin_found = true;
+			}
+			else {
+				for (i = 0; i < navigator.plugins.length; i++)
+					if (navigator.plugins[i].name == "Codebender.cc" || navigator.plugins[i].name == "Codebendercc")
+						this.plugin_found = true;
+			}
             this.plugin_searched = true;
         }
 
@@ -644,7 +665,7 @@ compilerflasher = function(lf){
         this.scan = function() {
 
                         window.hasPerm = document.getElementById('plugin0').setCallback(function (from, output) {
-                if (output == "Déconnecter") {
+                if (output == "Disconnect") {
 
                     compilerflasher.pluginHandler.disconnect(true);
                 } else
@@ -694,7 +715,7 @@ compilerflasher = function(lf){
                     $("#serial_monitor_content").show(1000);
                     this.connected = true;
                     var pl = this;
-                    $("#cb_cf_serial_monitor_connect").html("Déconnecter").unbind('click').click(function(){pl.disconnect()});
+                    $("#cb_cf_serial_monitor_connect").html("Disconnect").unbind('click').click(function(){pl.disconnect()});
                     $("#serial_hud").html("");
 
                     var pl = this;
@@ -727,7 +748,7 @@ compilerflasher = function(lf){
                     window.serialMonitorUpdater = setInterval(function(){
                         if(pl.serialMonitorToAppend != '')
                         {
-							 
+
                             var total_length =  pl.serialMonitorToAppend.length + pl.serialMonitorVal.length;
                             if(total_length > pl.max_monitor_length)
                             {
@@ -741,7 +762,7 @@ compilerflasher = function(lf){
 								$("#serial_valeur").text(pl.serialMonitorVal);
                                 //var $serial_valeur = pl.serialMonitorVal;
                             }
-							
+
                             pl.serialMonitorToAppend = '';
 
                             if($('#autoscroll_check').is(':checked'))
@@ -786,7 +807,7 @@ compilerflasher = function(lf){
 		            clearInterval(window.portValidatorInterval);
 
                 var pl = this;
-                $("#cb_cf_serial_monitor_connect").html("<i class='icon-list-alt'></i> Ouvrir la Console Série").unbind('click').click(function(){pl.connect()});
+                $("#cb_cf_serial_monitor_connect").html("<i class='icon-list-alt'></i> Open Serial Console").unbind('click').click(function(){pl.connect()});
                 this.connected = false;
 
                 $("#cb_cf_serial_monitor_connect").attr('disabled', 'disabled');
@@ -1346,9 +1367,9 @@ compilerflasher = function(lf){
 
     }
 
-   
+
     this.burn_bootloader = function() {
-        
+
 
         if(this.pluginHandler.canBurnBootloader(this.selectedProgrammer))
         {

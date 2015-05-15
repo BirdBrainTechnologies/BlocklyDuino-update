@@ -55,12 +55,12 @@ Blockly.Language.variables_declare = {
   init: function() {
     this.setColour(330);
     this.appendValueInput('VALUE', null)
-        .appendTitle('Déclare')
+        .appendTitle('Declare')
         .appendTitle(new Blockly.FieldVariable(
         Blockly.LANG_VARIABLES_SET_ITEM), 'VAR')
-        .appendTitle("comme")
-     	.appendTitle(new Blockly.FieldDropdown([["Nombre", "int"]]), "TYPE")
-	    .appendTitle("valeur");
+        .appendTitle("as")
+     	.appendTitle(new Blockly.FieldDropdown([["Number", "int"]]), "TYPE")
+	    .appendTitle("value");
     this.setPreviousStatement(true);
     this.setNextStatement(true);
     this.setTooltip(Blockly.LANG_VARIABLES_SET_TOOLTIP_1);
@@ -74,7 +74,7 @@ Blockly.Language.variables_declare = {
     }
   }
 };
- 
+
 Blockly.Language.variables_set = {
   // Variable setter.
   category: null,  // Variables are handled specially.
@@ -82,9 +82,11 @@ Blockly.Language.variables_set = {
   init: function() {
     this.setColour(330);
     this.appendValueInput('VALUE')
+    	.appendTitle('Set')
         .appendTitle(Blockly.LANG_VARIABLES_SET_TITLE_1)
         .appendTitle(new Blockly.FieldVariable(
-        Blockly.LANG_VARIABLES_SET_ITEM), 'VAR');
+        Blockly.LANG_VARIABLES_SET_ITEM), 'VAR')
+        .appendTitle('to');
     this.setPreviousStatement(true);
     this.setNextStatement(true);
     this.setTooltip(Blockly.LANG_VARIABLES_SET_TOOLTIP_1);
@@ -98,8 +100,8 @@ Blockly.Language.variables_set = {
     }
   }
 };
- 
- 
+
+
 /**
  * @fileoverview Variable blocks for Arduino.
  * @author gasolin@gmail.com (Fred Lin)
