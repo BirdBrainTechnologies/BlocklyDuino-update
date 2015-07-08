@@ -74,7 +74,7 @@ Blockly.LANG_COLOUR_BLEND_TOOLTIP = 'Blends two colours together with a given ra
 
 // Control Blocks.
 Blockly.LANG_CATEGORY_CONTROLS = 'Control';
-Blockly.LANG_CONTROLS_IF_HELPURL = 'http://code.google.com/p/blockly/wiki/If_Then';
+Blockly.LANG_CONTROLS_IF_HELPURL = 'http://www.hummingbirdkit.com/learning/block-specific-help#ifDo';
 Blockly.LANG_CONTROLS_IF_TOOLTIP_1 = 'If a value is true, then do some statements.';
 Blockly.LANG_CONTROLS_IF_TOOLTIP_2 = 'If a value is true, then do the first block of statements.\n' +
     'Otherwise, do the second block of statements.';
@@ -98,13 +98,13 @@ Blockly.LANG_CONTROLS_IF_ELSEIF_TOOLTIP = 'Add a condition to the if block.';
 Blockly.LANG_CONTROLS_IF_ELSE_TITLE_ELSE = 'else';
 Blockly.LANG_CONTROLS_IF_ELSE_TOOLTIP = 'Add a final, catch-all condition to the if block.';
 
-Blockly.LANG_CONTROLS_REPEAT_HELPURL = 'http://en.wikipedia.org/wiki/For_loop';
+Blockly.LANG_CONTROLS_REPEAT_HELPURL = 'http://www.hummingbirdkit.com/learning/block-specific-help#count';
 Blockly.LANG_CONTROLS_REPEAT_TITLE_REPEAT = 'repeat';
 Blockly.LANG_CONTROLS_REPEAT_TITLE_TIMES = 'times';
 Blockly.LANG_CONTROLS_REPEAT_INPUT_DO = 'do';
 Blockly.LANG_CONTROLS_REPEAT_TOOLTIP = 'Do some statements several times.';
 
-Blockly.LANG_CONTROLS_WHILEUNTIL_HELPURL = 'http://code.google.com/p/blockly/wiki/Repeat';
+Blockly.LANG_CONTROLS_WHILEUNTIL_HELPURL = 'http://www.hummingbirdkit.com/learning/block-specific-help#repeatWhile';
 Blockly.LANG_CONTROLS_WHILEUNTIL_TITLE_REPEAT = 'repeat';
 Blockly.LANG_CONTROLS_WHILEUNTIL_INPUT_DO = 'do';
 Blockly.LANG_CONTROLS_WHILEUNTIL_OPERATOR_WHILE = 'while';
@@ -112,7 +112,7 @@ Blockly.LANG_CONTROLS_WHILEUNTIL_OPERATOR_UNTIL = 'until';
 Blockly.LANG_CONTROLS_WHILEUNTIL_TOOLTIP_WHILE = 'While a value is true, then do some statements.';
 Blockly.LANG_CONTROLS_WHILEUNTIL_TOOLTIP_UNTIL = 'While a value is false, then do some statements.';
 
-Blockly.LANG_CONTROLS_FOR_HELPURL = 'http://en.wikipedia.org/wiki/For_loop';
+Blockly.LANG_CONTROLS_FOR_HELPURL = 'http://www.hummingbirdkit.com/learning/block-specific-help#count';
 Blockly.LANG_CONTROLS_FOR_INPUT_WITH = 'count with';
 Blockly.LANG_CONTROLS_FOR_INPUT_VAR = 'x';
 Blockly.LANG_CONTROLS_FOR_INPUT_FROM = 'from';
@@ -122,7 +122,7 @@ Blockly.LANG_CONTROLS_FOR_TOOLTIP = 'Count from a start number to an end number.
     'For each count, set the current count number to\n' +
     'variable "%1", and then do some statements.';
 
-Blockly.LANG_CONTROLS_FOREACH_HELPURL = 'http://en.wikipedia.org/wiki/For_loop';
+Blockly.LANG_CONTROLS_FOREACH_HELPURL = 'http://www.hummingbirdkit.com/learning/block-specific-help#count';
 Blockly.LANG_CONTROLS_FOREACH_INPUT_ITEM = 'for each item';
 Blockly.LANG_CONTROLS_FOREACH_INPUT_VAR = 'x';
 Blockly.LANG_CONTROLS_FOREACH_INPUT_INLIST = 'in list';
@@ -130,7 +130,7 @@ Blockly.LANG_CONTROLS_FOREACH_INPUT_DO = 'do';
 Blockly.LANG_CONTROLS_FOREACH_TOOLTIP = 'For each item in a list, set the item to\n' +
     'variable "%1", and then do some statements.';
 
-Blockly.LANG_CONTROLS_FLOW_STATEMENTS_HELPURL = 'http://en.wikipedia.org/wiki/Control_flow';
+Blockly.LANG_CONTROLS_FLOW_STATEMENTS_HELPURL = 'http://www.hummingbirdkit.com/learning/block-specific-help#breakOutOfLoop';
 Blockly.LANG_CONTROLS_FLOW_STATEMENTS_INPUT_OFLOOP = 'of loop';
 Blockly.LANG_CONTROLS_FLOW_STATEMENTS_OPERATOR_BREAK = 'break out';
 Blockly.LANG_CONTROLS_FLOW_STATEMENTS_OPERATOR_CONTINUE = 'continue with next iteration';
@@ -143,7 +143,7 @@ Blockly.LANG_CONTROLS_FLOW_STATEMENTS_WARNING = 'Warning:\n' +
 
 // Logic Blocks.
 Blockly.LANG_CATEGORY_LOGIC = 'Logic';
-Blockly.LANG_LOGIC_COMPARE_HELPURL = 'http://en.wikipedia.org/wiki/Inequality_(mathematics)';
+Blockly.LANG_LOGIC_COMPARE_HELPURL = 'http://www.hummingbirdkit.com/learning/block-specific-help#comparison';
 Blockly.LANG_LOGIC_COMPARE_TOOLTIP_EQ = 'Return true if both inputs equal each other.';
 Blockly.LANG_LOGIC_COMPARE_TOOLTIP_NEQ = 'Return true if both inputs are not equal to each other.';
 Blockly.LANG_LOGIC_COMPARE_TOOLTIP_LT = 'Return true if the first input is smaller\n' +
@@ -155,32 +155,32 @@ Blockly.LANG_LOGIC_COMPARE_TOOLTIP_GT = 'Return true if the first input is great
 Blockly.LANG_LOGIC_COMPARE_TOOLTIP_GTE = 'Return true if the first input is greater\n' +
     'than or equal to the second input.';
 
-Blockly.LANG_LOGIC_OPERATION_HELPURL = 'http://code.google.com/p/blockly/wiki/And_Or';
+Blockly.LANG_LOGIC_OPERATION_HELPURL = 'http://www.hummingbirdkit.com/learning/block-specific-help#andOr';
 Blockly.LANG_LOGIC_OPERATION_AND = 'and';
 Blockly.LANG_LOGIC_OPERATION_OR = 'or';
 Blockly.LANG_LOGIC_OPERATION_TOOLTIP_AND = 'Return true if both inputs are true.';
 Blockly.LANG_LOGIC_OPERATION_TOOLTIP_OR = 'Return true if either inputs are true.';
 
-Blockly.LANG_LOGIC_NEGATE_HELPURL = 'http://code.google.com/p/blockly/wiki/Not';
+Blockly.LANG_LOGIC_NEGATE_HELPURL = 'http://www.hummingbirdkit.com/learning/block-specific-help#not';
 Blockly.LANG_LOGIC_NEGATE_INPUT_NOT = 'not';
 Blockly.LANG_LOGIC_NEGATE_TOOLTIP = 'Returns true if the input is false.\n' +
     'Returns false if the input is true.';
 
-Blockly.LANG_LOGIC_BOOLEAN_HELPURL = 'http://code.google.com/p/blockly/wiki/True_False';
+Blockly.LANG_LOGIC_BOOLEAN_HELPURL = 'http://www.hummingbirdkit.com/learning/block-specific-help#trueFalse';
 Blockly.LANG_LOGIC_BOOLEAN_TRUE = 'true';
 Blockly.LANG_LOGIC_BOOLEAN_FALSE = 'false';
 Blockly.LANG_LOGIC_BOOLEAN_TOOLTIP = 'Returns either true or false.';
 
-Blockly.LANG_LOGIC_NULL_HELPURL = 'http://en.wikipedia.org/wiki/Nullable_type';
+Blockly.LANG_LOGIC_NULL_HELPURL = 'http://www.hummingbirdkit.com/learning/block-specific-help#null';
 Blockly.LANG_LOGIC_NULL = 'null';
 Blockly.LANG_LOGIC_NULL_TOOLTIP = 'Returns null.';
 
 // Math Blocks.
 Blockly.LANG_CATEGORY_MATH = 'Math';
-Blockly.LANG_MATH_NUMBER_HELPURL = 'http://en.wikipedia.org/wiki/Number';
+Blockly.LANG_MATH_NUMBER_HELPURL = 'http://www.hummingbirdkit.com/learning/block-specific-help#number';
 Blockly.LANG_MATH_NUMBER_TOOLTIP = 'A number.';
 
-Blockly.LANG_MATH_ARITHMETIC_HELPURL = 'http://en.wikipedia.org/wiki/Arithmetic';
+Blockly.LANG_MATH_ARITHMETIC_HELPURL = 'http://www.hummingbirdkit.com/learning/block-specific-help#arithmetic';
 Blockly.LANG_MATH_ARITHMETIC_TOOLTIP_ADD = 'Return the sum of the two numbers.';
 Blockly.LANG_MATH_ARITHMETIC_TOOLTIP_MINUS = 'Return the difference of the two numbers.';
 Blockly.LANG_MATH_ARITHMETIC_TOOLTIP_MULTIPLY = 'Return the product of the two numbers.';
@@ -261,7 +261,7 @@ Blockly.LANG_MATH_RANDOM_FLOAT_TOOLTIP = 'Return a random fraction between\n' +
 
 // Text Blocks.
 Blockly.LANG_CATEGORY_TEXT = 'Text';
-Blockly.LANG_TEXT_TEXT_HELPURL = 'http://en.wikipedia.org/wiki/String_(computer_science)';
+Blockly.LANG_TEXT_TEXT_HELPURL = 'http://www.hummingbirdkit.com/learning/block-specific-help#text';
 Blockly.LANG_TEXT_TEXT_TOOLTIP = 'A letter, word, or line of text.';
 
 Blockly.LANG_TEXT_JOIN_HELPURL = '';
@@ -392,23 +392,23 @@ Blockly.LANG_LISTS_SET_INDEX_INPUT_TO = 'to';
 Blockly.LANG_LISTS_SET_INDEX_TOOLTIP = 'Sets the value at the specified position in a list.';
 
 // Variables Blocks.
-Blockly.LANG_VARIABLES_GET_HELPURL = 'http://en.wikipedia.org/wiki/Variable_(computer_science)';
+Blockly.LANG_VARIABLES_GET_HELPURL = 'http://www.hummingbirdkit.com/learning/block-specific-help#readVariable';
 Blockly.LANG_VARIABLES_GET_TITLE = 'get';
 Blockly.LANG_VARIABLES_GET_ITEM = 'item';
 Blockly.LANG_VARIABLES_GET_TOOLTIP = 'Returns the value of this variable.';
 
-Blockly.LANG_VARIABLES_SET_HELPURL = 'http://en.wikipedia.org/wiki/Variable_(computer_science)';
+Blockly.LANG_VARIABLES_SET_HELPURL = 'http://www.hummingbirdkit.com/learning/block-specific-help#set';
 Blockly.LANG_VARIABLES_SET_TITLE = 'set';
 Blockly.LANG_VARIABLES_SET_ITEM = 'item';
 Blockly.LANG_VARIABLES_SET_TOOLTIP = 'Sets this variable to be equal to the input.';
 
 // Procedures Blocks.
-Blockly.LANG_PROCEDURES_DEFNORETURN_HELPURL = 'http://en.wikipedia.org/wiki/Procedure_%28computer_science%29';
+Blockly.LANG_PROCEDURES_DEFNORETURN_HELPURL = 'http://www.hummingbirdkit.com/learning/block-specific-help#newProcedureReturn';
 Blockly.LANG_PROCEDURES_DEFNORETURN_PROCEDURE = 'procedure';
 Blockly.LANG_PROCEDURES_DEFNORETURN_DO = 'do';
 Blockly.LANG_PROCEDURES_DEFNORETURN_TOOLTIP = 'A procedure with no return value.';
 
-Blockly.LANG_PROCEDURES_DEFRETURN_HELPURL = 'http://en.wikipedia.org/wiki/Procedure_%28computer_science%29';
+Blockly.LANG_PROCEDURES_DEFRETURN_HELPURL = 'http://www.hummingbirdkit.com/learning/block-specific-help#newProcedureReturn';
 Blockly.LANG_PROCEDURES_DEFRETURN_PROCEDURE = Blockly.LANG_PROCEDURES_DEFNORETURN_PROCEDURE;
 Blockly.LANG_PROCEDURES_DEFRETURN_DO = Blockly.LANG_PROCEDURES_DEFNORETURN_DO;
 Blockly.LANG_PROCEDURES_DEFRETURN_RETURN = 'return';
@@ -418,12 +418,12 @@ Blockly.LANG_PROCEDURES_DEF_DUPLICATE_WARNING = 'Warning:\n' +
     'This procedure has\n' +
     'duplicate parameters.';
 
-Blockly.LANG_PROCEDURES_CALLNORETURN_HELPURL = 'http://en.wikipedia.org/wiki/Procedure_%28computer_science%29';
+Blockly.LANG_PROCEDURES_CALLNORETURN_HELPURL = 'http://www.hummingbirdkit.com/learning/block-specific-help#doProcedure';
 Blockly.LANG_PROCEDURES_CALLNORETURN_CALL = 'do';
 Blockly.LANG_PROCEDURES_CALLNORETURN_PROCEDURE = 'procedure';
 Blockly.LANG_PROCEDURES_CALLNORETURN_TOOLTIP = 'Call a procedure with no return value.';
 
-Blockly.LANG_PROCEDURES_CALLRETURN_HELPURL = 'http://en.wikipedia.org/wiki/Procedure_%28computer_science%29';
+Blockly.LANG_PROCEDURES_CALLRETURN_HELPURL = 'http://www.hummingbirdkit.com/learning/block-specific-help#doProcedureReturn';
 Blockly.LANG_PROCEDURES_CALLRETURN_CALL = Blockly.LANG_PROCEDURES_CALLNORETURN_CALL;
 Blockly.LANG_PROCEDURES_CALLRETURN_PROCEDURE = Blockly.LANG_PROCEDURES_CALLNORETURN_PROCEDURE;
 Blockly.LANG_PROCEDURES_CALLRETURN_TOOLTIP = 'Call a procedure with a return value.';

@@ -30,7 +30,7 @@ if (!Blockly.Language) Blockly.Language = {};
 
 Blockly.Language.base_delay = {
   category: 'Control',
-  helpUrl: 'http://arduino.cc/en/Reference/delay',
+  helpUrl: 'http://www.hummingbirdkit.com/learning/block-specific-help#delayInMs',
   init: function() {
     this.setColour(120);
     this.appendValueInput("DELAY_TIME", Number)
@@ -45,7 +45,7 @@ Blockly.Language.base_delay = {
 
 Blockly.Language.base_map = {
   category: 'Math',
-  helpUrl: 'http://arduino.cc/en/Reference/map',
+  helpUrl: 'http://www.hummingbirdkit.com/learning/block-specific-help#mapValue',
   init: function() {
     this.setColour(230);
     this.appendValueInput("NUM", Number)
@@ -64,7 +64,7 @@ Blockly.Language.base_map = {
 
 Blockly.Language.inout_digital_write = {
   category: 'In/Out',
-  helpUrl: 'http://arduino.cc/en/Reference/DigitalWrite',
+  helpUrl: 'http://www.hummingbirdkit.com/learning/block-specific-help#digitalWrite',
   init: function() {
     this.setColour(230);
     this.appendDummyInput("")
@@ -80,7 +80,7 @@ Blockly.Language.inout_digital_write = {
 
 Blockly.Language.inout_digital_read = {
   category: 'In/Out',
-  helpUrl: 'http://arduino.cc/en/Reference/DigitalRead',
+  helpUrl: 'http://www.hummingbirdkit.com/learning/block-specific-help#digitalRead',
   init: function() {
     this.setColour(230);
     this.appendDummyInput("")
@@ -93,7 +93,7 @@ Blockly.Language.inout_digital_read = {
 
 Blockly.Language.inout_analog_write = {
   category: 'In/Out',
-  helpUrl: 'http://arduino.cc/en/Reference/AnalogWrite',
+  helpUrl: 'http://www.hummingbirdkit.com/learning/block-specific-help#analogWrite',
   init: function() {
     this.setColour(230);
     this.appendDummyInput("")
@@ -111,7 +111,7 @@ Blockly.Language.inout_analog_write = {
 
 Blockly.Language.inout_analog_read = {
   category: 'In/Out',
-  helpUrl: 'http://arduino.cc/en/Reference/AnalogRead',
+  helpUrl: 'http://www.hummingbirdkit.com/learning/block-specific-help#analogRead',
   init: function() {
     this.setColour(230);
     this.appendDummyInput("")
@@ -124,7 +124,7 @@ Blockly.Language.inout_analog_read = {
 
 Blockly.Language.inout_highlow = {
   category: 'In/Out',
-  helpUrl: 'http://arduino.cc/en/Reference/Constants',
+  helpUrl: 'http://www.hummingbirdkit.com/learning/block-specific-help#highLow',
   init: function() {
     this.setColour(230);
     this.appendDummyInput("")
@@ -137,7 +137,7 @@ Blockly.Language.inout_highlow = {
 
 Blockly.Language.serial_print = {
   category: 'In/Out',
-  helpUrl: 'http://www.arduino.cc/en/Serial/Print',
+  helpUrl: 'http://www.hummingbirdkit.com/learning/block-specific-help#serialPrint',
   init: function() {
     this.setColour(230);
     this.appendValueInput("CONTENT", String)

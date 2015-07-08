@@ -46,7 +46,7 @@ Blockly.Arduino.math_arithmetic = function() {
   var argument1 = Blockly.Arduino.valueToCode(this, 'B', order) || '0';
   var code;
   if (!operator) {
-    code = 'Math.pow(' + argument0 + ', ' + argument1 + ')';
+    code = 'pow(' + argument0 + ', ' + argument1 + ')';
     return [code, Blockly.Arduino.ORDER_UNARY_POSTFIX];
   }
   code = argument0 + operator + argument1;

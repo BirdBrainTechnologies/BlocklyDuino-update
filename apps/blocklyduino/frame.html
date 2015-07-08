@@ -1,7 +1,7 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <title>Blockly Arduino</title>
+  <title>Blockly Duo</title>
   <script type="text/javascript" src="../blockly_compressed.js"></script>
   <script type="text/javascript" src="../../generators/arduino.js"></script>
   <script type="text/javascript" src="../../generators/arduino/control.js"></script>
@@ -60,11 +60,11 @@
           //variable
           'variables_get','variables_set', 'variables_declare',
           //procedure
-          'procedures_defnoreturn', 'procedures_defreturn', 'procedures_callnoreturn', 'procedures_callreturn', 'procedures_mutatorcontainer', 'procedures_mutatorarg',
-          'procedures_ifreturn',
+          //'procedures_defnoreturn', 'procedures_defreturn', 'procedures_callnoreturn', 'procedures_callreturn', 'procedures_mutatorcontainer', 'procedures_mutatorarg',
+          //'procedures_ifreturn',
           //'custom_read','custom_write',
           //hummingbird
-          'hummingbird_led','hummingbird_triled','hummingbird_statusled','hummingbird_motor','hummingbird_servo','hummingbird_vibration','hummingbird_sensor'
+          'hummingbird_led','hummingbird_triled','hummingbird_statusled','hummingbird_motor','hummingbird_servo','hummingbird_vibration','hummingbird_sensor','hummingbird_sys_voltage'
           ];
       for (var x = 0; x < keepers.length; x++) {
         newLanguage[keepers[x]] = Blockly.Language[keepers[x]];

@@ -1,6 +1,6 @@
 /**
  * @fileoverview Helper functions for generating Hummingbird blocks.
- * @author Justin Lee
+ * @author Justin Lee/Tom Lauwers
  */
 'use strict';
 
@@ -9,16 +9,15 @@ if (!Blockly.Language) Blockly.Language = {};
 
 Blockly.Language.hummingbird_led = {
   category: 'Hummingbird',
-  helpUrl: 'http://hummingbirdkit.com',
+  helpUrl: 'http://www.hummingbirdkit.com/learning/block-specific-help#led',
   init: function() {
     this.setColour(50);
 	this.appendDummyInput("")
-	    .appendTitle("Hummingbird LED")
-	    .appendTitle(new Blockly.FieldImage("http://www.hummingbirdkit.com/sites/default/files/kit-contents/full_LEDs.png", 64, 64))
+	    .appendTitle(new Blockly.FieldImage("/blockly/media/LED.png", 75, 75))
 	    .appendTitle("Port#")
 	    .appendTitle(new Blockly.FieldDropdown([["1","1"],["2","2"],["3","3"],["4","4"]]), "PIN")
 	this.appendValueInput("NUM", Number)
-	    .appendTitle("Intensity");
+	    .appendTitle("Intensity (0 to 255)");
 	this.setInputsInline(true);
     this.setPreviousStatement(true, null);
     this.setNextStatement(true, null);
@@ -28,12 +27,11 @@ Blockly.Language.hummingbird_led = {
 
 Blockly.Language.hummingbird_triled = {
   category: 'Hummingbird',
-  helpUrl: 'http://hummingbirdkit.com',
+  helpUrl: 'http://www.hummingbirdkit.com/learning/block-specific-help#triColorLed',
   init: function() {
     this.setColour(65);
 	this.appendDummyInput("")
-	    .appendTitle("Hummingbird Tri-Color LED")
-	    .appendTitle(new Blockly.FieldImage("http://www.hummingbirdkit.com/sites/default/files/kit-contents/full_TriColorLED.png", 64, 64))
+	    .appendTitle(new Blockly.FieldImage("/blockly/media/TriLED.png", 75, 75))
 	    .appendTitle("Port#")
 	    .appendTitle(new Blockly.FieldDropdown([["1","1"],["2","2"]]), "PIN");
 	this.appendValueInput("RED", Number)
@@ -51,17 +49,18 @@ Blockly.Language.hummingbird_triled = {
 
 Blockly.Language.hummingbird_statusled = {
   category: 'Hummingbird',
-  helpUrl: 'http://hummingbirdkit.com',
+  helpUrl: 'http://www.hummingbirdkit.com/learning/block-specific-help#statusLed',
   init: function() {
     this.setColour(40);
-	this.appendDummyInput("")
-	    .appendTitle("Hummingbird Status LED");
-	this.appendValueInput("NUM", Number)
-	    .appendTitle("Intensity");
-	this.setInputsInline(true);
+		this.appendDummyInput("")
+			.appendTitle(new Blockly.FieldImage("/blockly/media/StatusLED.png", 75, 75))
+		this.appendValueInput("NUM", Number)
+			.appendTitle("Intensity  (0 to 255)");
+		this.setInputsInline(true);
     this.setPreviousStatement(true, null);
     this.setNextStatement(true, null);
-    this.setTooltip('Set Hummingbird Status LED');
+    this.setTooltip('Set Hummingbird\'s Green Status LED');
+
   }
 };
 
@@ -82,35 +81,33 @@ Blockly.Language.hummingbird_ledfade = {
 
 Blockly.Language.hummingbird_motor = {
   category: 'Hummingbird',
-  helpUrl: 'http://hummingbirdkit.com',
+  helpUrl: 'http://www.hummingbirdkit.com/learning/block-specific-help#motor',
   init: function() {
     this.setColour(180);
 	this.appendDummyInput("")
-	    .appendTitle("Hummingbird Motor Port#")
-	    .appendTitle(new Blockly.FieldImage("http://www.hummingbirdkit.com/sites/default/files/kit-contents/full_Motor.png", 64, 64))
+	    .appendTitle(new Blockly.FieldImage("/blockly/media/Motor.png", 90, 75))
 	    .appendTitle("Port#")
 	    .appendTitle(new Blockly.FieldDropdown([["1","1"],["2","2"]]), "PIN");
 	this.appendValueInput("NUM", Number)
-	    .appendTitle("Velocity");
+	    .appendTitle("Velocity  (-255 to 255)");
 	this.setInputsInline(true);
     this.setPreviousStatement(true, null);
     this.setNextStatement(true, null);
-    this.setTooltip('Set Hummingbird Motor');
+    this.setTooltip('Set Hummingbird Gear Motor');
   }
 };
 
 Blockly.Language.hummingbird_servo = {
   category: 'Hummingbird',
-  helpUrl: 'http://hummingbirdkit.com',
+  helpUrl: 'http://www.hummingbirdkit.com/learning/block-specific-help#servo',
   init: function() {
     this.setColour(195);
 	this.appendDummyInput("")
-	    .appendTitle("Hummingbird Servo")
-	    .appendTitle(new Blockly.FieldImage("http://www.hummingbirdkit.com/sites/default/files/kit-contents/full_Servo2.png", 64, 64))
+	    .appendTitle(new Blockly.FieldImage("/blockly/media/Servos.png", 94, 60))
 	    .appendTitle("Port#")
 	    .appendTitle(new Blockly.FieldDropdown([["1","1"],["2","2"],["3","3"],["4","4"]]), "PIN");
 	this.appendValueInput("NUM", Number)
-	    .appendTitle("Angle");
+	    .appendTitle("Angle (0 to 180)");
 	this.setInputsInline(true);
     this.setPreviousStatement(true, null);
     this.setNextStatement(true, null);
@@ -120,20 +117,19 @@ Blockly.Language.hummingbird_servo = {
 
 Blockly.Language.hummingbird_vibration = {
   category: 'Hummingbird',
-  helpUrl: 'http://hummingbirdkit.com',
+  helpUrl: 'http://www.hummingbirdkit.com/learning/block-specific-help#vibrationMotor',
   init: function() {
     this.setColour(165);
 	this.appendDummyInput("")
-	    .appendTitle("Hummingbird Vibration")
-	    .appendTitle(new Blockly.FieldImage("http://www.hummingbirdkit.com/sites/default/files/kit-contents/full_VibrationMotor.png", 64, 64))
+	    .appendTitle(new Blockly.FieldImage("/blockly/media/Vibration.png", 129, 56))
 	    .appendTitle("Port#")
 	    .appendTitle(new Blockly.FieldDropdown([["1","1"],["2","2"]]), "PIN")
 	this.appendValueInput("NUM", Number)
-	    .appendTitle("Intensity");
+	    .appendTitle("Intensity (0 to 255)");
 	this.setInputsInline(true);
     this.setPreviousStatement(true, null);
     this.setNextStatement(true, null);
-    this.setTooltip('Set Hummingbird Vibration');
+    this.setTooltip('Set Hummingbird Vibration Motor');
   }
 };
 
@@ -154,14 +150,29 @@ Blockly.Language.hummingbird_vibrationspeed = {
 
 Blockly.Language.hummingbird_sensor = {
   category: 'Hummingbird',
-  helpUrl: 'http://hummingbirdkit.com',
+  helpUrl: 'http://www.hummingbirdkit.com/learning/block-specific-help#sensor',
   init: function() {
     this.setColour(340);
 	this.appendDummyInput("")
-	    .appendTitle("Hummingbird Sensor Port#")
+		.appendTitle(new Blockly.FieldImage("/blockly/media/Sensor.png", 87, 60))
+	    .appendTitle("Port #")
 	    .appendTitle(new Blockly.FieldDropdown([["1","1"],["2","2"],["3","3"],["4","4"]]), "PIN")
+	    .appendTitle("Returns value from 0 to 1023")
     this.setOutput(true, Number);
-    this.setTooltip('Get Hummingbird Sensor');
+    this.setTooltip('Get Hummingbird Sensor value, 0V to 5V is mapped to 0 to 1023');
+  }
+};
+
+Blockly.Language.hummingbird_sys_voltage = {
+  category: 'Hummingbird',
+  helpUrl: 'http://www.hummingbirdkit.com/learning/block-specific-help#systemVoltage',
+  init: function() {
+    this.setColour(340);
+	this.appendDummyInput("")
+		.appendTitle(new Blockly.FieldImage("/blockly/media/SystemVoltage.png", 78, 60))
+	    .appendTitle("Returns value from 0V to 10.0V")
+    this.setOutput(true, Number);
+    this.setTooltip('Get Hummingbird\'s Motor Port Voltage, from 0V to 10.0V');
   }
 };
 
@@ -260,5 +271,13 @@ Blockly.Arduino.hummingbird_sensor = function() {
   Blockly.Arduino.setups_['setup_hummingbird'] = 'bird.init();\n';
   var dropdown_pin = this.getTitleValue('PIN');
   var code = 'bird.readSensorValue('+dropdown_pin+')';
+  return [code, Blockly.Arduino.ORDER_ATOMIC];
+};
+
+Blockly.Arduino.hummingbird_sys_voltage = function() {
+  Blockly.Arduino.definitions_['define_hummingbird'] = '#include <Hummingbird.h>\n';
+  Blockly.Arduino.definitions_['var_hummingbird'] = 'Hummingbird bird;\n';
+  Blockly.Arduino.setups_['setup_hummingbird'] = 'bird.init();\n';
+  var code = 'bird.readInputVoltage()';
   return [code, Blockly.Arduino.ORDER_ATOMIC];
 };

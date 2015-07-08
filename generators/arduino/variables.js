@@ -28,7 +28,7 @@ if (!Blockly.Language) Blockly.Language = {};
 Blockly.Language.variables_get = {
   // Variable getter.
   category: null,  // Variables are handled specially.
-  helpUrl: Blockly.LANG_VARIABLES_GET_HELPURL,
+  helpUrl: 'http://www.hummingbirdkit.com/learning/block-specific-help#readVariable',
   init: function() {
     this.setColour(330);
     this.appendDummyInput("")
@@ -36,7 +36,7 @@ Blockly.Language.variables_get = {
         .appendTitle(new Blockly.FieldVariable(
         Blockly.LANG_VARIABLES_GET_ITEM), 'VAR');
     this.setOutput(true, null);
-    this.setTooltip(Blockly.LANG_VARIABLES_GET_TOOLTIP_1);
+    this.setTooltip('Returns the value of this variable.');
   },
   getVars: function() {
     return [this.getTitleValue('VAR')];
@@ -51,7 +51,7 @@ Blockly.Language.variables_get = {
 Blockly.Language.variables_declare = {
   // Variable setter.
   category: null,  // Variables are handled specially.
-  helpUrl: Blockly.LANG_VARIABLES_SET_HELPURL,
+  helpUrl: 'http://www.hummingbirdkit.com/learning/block-specific-help#declare',
   init: function() {
     this.setColour(330);
     this.appendValueInput('VALUE', null)
@@ -63,7 +63,7 @@ Blockly.Language.variables_declare = {
 	    .appendTitle("value");
     this.setPreviousStatement(true);
     this.setNextStatement(true);
-    this.setTooltip(Blockly.LANG_VARIABLES_SET_TOOLTIP_1);
+    this.setTooltip('Declares a new variable and sets it to an initial value');
   },
   getVars: function() {
     return [this.getTitleValue('VAR')];
@@ -78,7 +78,7 @@ Blockly.Language.variables_declare = {
 Blockly.Language.variables_set = {
   // Variable setter.
   category: null,  // Variables are handled specially.
-  helpUrl: Blockly.LANG_VARIABLES_SET_HELPURL,
+  helpUrl: 'http://www.hummingbirdkit.com/learning/block-specific-help#set',
   init: function() {
     this.setColour(330);
     this.appendValueInput('VALUE')
@@ -89,7 +89,7 @@ Blockly.Language.variables_set = {
         .appendTitle('to');
     this.setPreviousStatement(true);
     this.setNextStatement(true);
-    this.setTooltip(Blockly.LANG_VARIABLES_SET_TOOLTIP_1);
+    this.setTooltip('Sets this variable to be equal to the input.');
   },
   getVars: function() {
     return [this.getTitleValue('VAR')];
